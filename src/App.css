@@ -1,0 +1,460 @@
+*{ 
+  margin: o;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: bold;
+ 
+}
+
+.up{
+text-transform: uppercase;
+}
+
+.pokedexx img{
+  width: 400px;
+}
+.header{
+  height: 150px;
+  width: 100%;
+  background-color: red;
+  border-bottom: solid 30px #070b0a ;
+  position: relative;
+
+}
+
+.headerCircle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 10px black;
+  position: absolute;
+  right: 30px;
+  top: 85px
+  
+}
+
+article img{
+  width: 170px;
+  position: absolute;
+  right: 70px;
+}
+
+.card-pokemon{
+width: 300px;
+position: relative;
+margin-top: 20px;
+
+}
+
+span{
+  display: inline-block;
+  
+}
+
+.card-stats{
+  background-color: white;
+  margin-top: 120px;
+  padding: 40px;
+  width: 94%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  
+}
+.margin{
+  text-align: center;
+}
+.stat-name{
+  color: rgb(188, 178, 178);
+  font-size: 10px;
+  margin-bottom: 8%;
+}
+.margin3{
+  margin-left: 13%;
+ 
+  }
+.margin4{
+  margin-left: 40%;
+ 
+}
+
+.margin5 {
+  margin-left: 9%;
+  margin-bottom: 2%;
+
+}
+.grass{
+  background: linear-gradient(to bottom, #8ACBC5,#C2DFA4);
+  border: solid 7px #c9eaa5;
+  border-radius: 4%;
+  min-height: 185px;
+}
+
+.fire{
+  background: linear-gradient(to bottom, #E75C33,#E68E1F);
+  border: solid 7px #f0a548;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.fire h2{
+  color: #E68E1F;
+}
+
+.normal h2{
+  color: #b07380;
+}
+.rock h2{
+  color: #bfbfc7;
+}
+.dark h2{
+  color: #353938;
+}
+.ice h2{
+  color:#9fd5ec
+}
+.steel h2{
+  color: #b0b7b4;
+}
+.dragon h2{
+  color:#a1d1d7
+}
+.fairy h2{
+  color:#de82a2
+}
+.groung h2{
+  color: #cd9c52
+}
+.poison h2{
+  color: #bb91e6
+}
+.ghost h2{
+  color: #7c81d4;
+}
+.psychic h2{
+  color: #de7d7d
+}
+.electric h2{
+  color: #7276d0;
+}
+.flying h2{
+  color: #a1d1d7;
+}
+.grass h2{
+  color: #c9eaa5;
+}
+.water{
+  background: linear-gradient(to bottom, #145BB7,#2B85F9);
+  border: solid 7px #599bf1;
+  border-radius: 4%;
+  min-height: 185px;
+}
+
+.water h2{
+  color: #2B85F9;
+}
+.bug{
+  background: linear-gradient(to bottom, #3DB23A,#60CB5E);
+  border: solid 7px #7ae878;
+  border-radius: 4%;
+  min-height: 185px;
+}
+
+.bug h2{
+  color: #60CB5E;
+}
+.normal{
+  background: linear-gradient(to bottom, #7F565F,#A86473);
+  border: solid 7px #b07380;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.rock{
+  background: linear-gradient(to bottom, #818183,#a5a5aa);
+  border: solid 7px #bfbfc7;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.dark{
+  background: linear-gradient(to bottom, #070b0a,#282c2b);
+  border: solid 7px #353938;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.ice{
+  background: linear-gradient(to bottom, #6bc2e7,#89d8f9);
+  border: solid 7px #9fd5ec;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.steel{
+  background: linear-gradient(to bottom, #647871,#8c9894);
+  border: solid 7px #b0b7b4;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.dragon{
+  background: linear-gradient(to bottom, #4d949e,#79b0b7);
+  border: solid 7px #a1d1d7;
+  border-radius: 4%; 
+  min-height: 185px;
+}
+.fairy{
+  background: linear-gradient(to bottom, #a62551,#c85c81);
+  border: solid 7px #de82a2;
+  border-radius: 4%; 
+  min-height: 185px;
+}
+.ground{
+  background: linear-gradient(to bottom, #71490d,#b17b2a);
+  border: solid 7px #cd9c52;
+  border-radius: 4%; 
+  min-height: 185px;
+}
+.poison{
+  background: linear-gradient(to bottom, #6e3e9c,#b074eb);
+  border: solid 7px #bb91e6;
+  border-radius: 4%; 
+  min-height: 185px;
+}
+.fighting{
+  background: linear-gradient(to bottom, #9e432c,#c85234);
+  border: solid 7px #e47f66;
+  border-radius: 4%; 
+  min-height: 185px;
+}
+.ghost{
+  background: linear-gradient(to bottom, #373b7b,#595ebb);
+  border: solid 7px #7c81d4;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.psychic{
+  background: linear-gradient(to bottom, #dd3434,#e05d5d);
+  border: solid 7px #de7d7d;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.electric{
+  background: linear-gradient(to bottom, #1a2098,#4e53ba);
+  border: solid 7px #7276d0;
+  border-radius: 4%;
+  min-height: 185px;
+}
+.flying{
+  background: linear-gradient(to bottom, #4d949e,#79b0b7);
+  border: solid 7px #a1d1d7;
+  border-radius: 4%; 
+  min-height: 185px;
+}
+.filterPos{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 30px;
+  /* left: 250px; */
+}
+
+.margiLeft{
+  margin-left: 40px;
+}
+.typeTitle{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.homeMargin{
+  margin-left: 50px;
+}
+.switch{
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+.nameCrad{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.card2{
+  width: 65%;
+  
+  margin-top: 12%;
+  align-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  flex-wrap: wrap; 
+  justify-content: center;
+  min-height: 90%;
+
+
+}
+
+.card2 img{
+top:2%;
+width: 350px;
+position: absolute;
+right: 40%;
+
+
+}
+
+.card3{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  
+}
+.container2{
+  text-align: center;
+}
+.id-box{
+  border: 1px solid #D3D3D3;
+  border-radius: 2px;
+  width: 78px;
+  margin-left: 46%;
+  margin-top: 2%;
+}
+.flex{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header{
+  background-color: red;
+}
+.black{
+  background-color: black;
+  color: white;
+}
+.white{
+  background-color: white;
+}
+.Progress{
+ width: 55%;
+ margin-left: 23%;
+}
+.separator{
+  margin-left: 7%;
+}
+.moves{
+background-color: #E5E5E5;
+border-radius: 50px;
+width: 181px;
+height: 43px;
+border: solid 2px purple;
+}
+
+.margiTop{
+  margin-top: 100px;
+}
+.movements{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.separator-top{
+  margin-top: 5%;
+}
+.type{
+  background-color: #E5E5E5;
+  border-radius: 50px;
+  width: 181px;
+  height: 43px;
+  border: solid 2px purple;
+  margin-left: 41%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  margin: auto;
+  }
+  .abilitys{
+    background-color: #E5E5E5;
+    border-radius: 50px;
+    width: 181px;
+    height: 43px;
+    border: solid 2px purple;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    }
+    .superiorPages {
+      margin-bottom: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .pagination {
+      display: flex;
+    }
+    .pagination button {
+      padding: 3px 0px;
+      margin: 5px 10px;
+      width: 40px;
+      border-radius: 10px;
+      border: solid 1px;
+      cursor: pointer;
+    }
+    .pagination input {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+      font-size: 18px;
+      width: 50px;
+      border-radius: 10px;
+      border: solid 1px;
+    }
+    .pagination p {
+      margin-left: 10px;
+      margin-top: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .pages {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: -10px;
+    }
+
+
+    @media (max-width: 767px){
+    .infoPok img{
+      width: 200px;
+      position: absolute;
+      right: 110px;
+    }
+
+    .centerMedia{
+      display: flex;
+      
+      justify-content: center;
+    }
+    .type{
+      background-color: #E5E5E5;
+      border-radius: 50px;
+      width: 181px;
+      height: 43px;
+      border: solid 2px purple;
+      margin-left: 41%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      
+      }
+    }
+
+ 
+  
