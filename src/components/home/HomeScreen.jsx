@@ -1,6 +1,7 @@
 import React from 'react'
 import InputHome from './InputHome'
 
+
 const HomeScreen = () => {
 
  
@@ -13,6 +14,7 @@ const HomeScreen = () => {
     <h1 className='homeMargin'>Podedex</h1>
     <h2 className='homeMargin'>¡Hola Entrenador!</h2>
     <InputHome />
+    
   </div>
   )
 }

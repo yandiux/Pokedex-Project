@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux'
 import Pagination from '../../../PaginationP'
 import PokeCard from './PokeCard'
 import PokeType from './PokeType'
+import Loader from './Loader'
+import Error from './Error'
 
 
 
@@ -15,12 +17,21 @@ const PokedexScreen = () => {
   const [pokemons, setPokemons] = useState()
   const [page, setPage] = useState(1)
   const [perPage, setPerPage] = useState(20)
+  const [loader, setLoader] = useState(false)
+  const [error, setError] = useState(null)
+  
+ 
 
   useEffect(() => {
+    
     const URL_POKEMONS = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154'
     axios.get(URL_POKEMONS)
-      .then(res => setPokemons(res.data.results))
+      .then(res => setPokemons(res.data.results, setLoader (false)))
+        
+      
       .catch(err => console.log(err))
+      setLoader(true)
+      
   }, [])
 
   console.log(pokemons)
@@ -31,6 +42,7 @@ const PokedexScreen = () => {
   
  
   return (
+    
 
     <div className='header'>
       <div className='headerCircle'>
@@ -39,12 +51,16 @@ const PokedexScreen = () => {
       <h2 className='margiTop margiLeft'>Hola {nameUser}, bienvenido a la pokedex </h2>
       <h3 className='margiTop'><PokeType pokemons={pokemons} setfilterPokemon={setfilterPokemon}/></h3>
         
-        
+      
         <div className='superiorPages '>
         {/* <Pagination page={page} setPage={setPage} max={max} /> */}
       </div>
+
+      {loader && <Loader/> }
+      
       <div className='flex'>
         {
+          
           filterPokemon ?
           filterPokemon
           ?.slice((page - 1) * perPage, (page - 1) * perPage + perPage
@@ -66,9 +82,12 @@ const PokedexScreen = () => {
         }
         <div className='pages'>
         <Pagination page={page} setPage={setPage} max={max} />
+      
+        
       </div>
       </div>
       </div>
+    
       
   )
 }
